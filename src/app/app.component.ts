@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   // myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched
   protected isMissingRequiredField(fieldName: string): boolean {
     const field = this.myForm.get(fieldName);
-
+    // see: https://angular.io/guide/form-validation
     return !!(field?.invalid && (field?.dirty || field?.touched));
   }
 
