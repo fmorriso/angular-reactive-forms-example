@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   // myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched
-  public isMissingRequiredField(fieldName: string): boolean {
+  protected isMissingRequiredField(fieldName: string): boolean {
     const field = this.myForm.get(fieldName);
 
     return !!(field?.invalid && (field?.dirty || field?.touched));
