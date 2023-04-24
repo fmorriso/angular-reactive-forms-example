@@ -1,7 +1,6 @@
 import { Component, OnInit, VERSION as ngVersion } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-// @ts-ignore
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,9 +12,15 @@ export class AppComponent implements OnInit {
   constructor(private fb: FormBuilder) {
     this.myForm = this.fb.group({}, null);
   }
-
   ngOnInit() {
     this.initializeForm();
+  }
+
+  // myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched
+  public isMissingRequiredField(fieldName: string): boolean {
+    const field = this.myForm.get(fieldName);
+
+    return !!(field?.invalid && (field?.dirty || field?.touched));
   }
 
   private initializeForm(): void {
