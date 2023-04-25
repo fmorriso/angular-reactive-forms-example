@@ -1,5 +1,7 @@
 import { Component, OnInit, VERSION as ngVersion } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+//
+import {VERSION as matVersion} from '@angular/material/core';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   public get AngularVersion(): string { return ngVersion.full;}
+  public get MaterialVersion(): string {return matVersion.full;}
 
   onSubmit(form: FormGroup) {
     console.log('Valid?', form.valid); // true or false
