@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { MaterialFormComponent } from './material-form/material-form.component';
 import { AboutComponent } from './about/about.component';
+import {CustomMaterialModule} from "./shared/custom-material.module";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
+    CustomMaterialModule,
     AppRoutingModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
