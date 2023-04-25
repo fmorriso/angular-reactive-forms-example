@@ -10,13 +10,15 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { MaterialFormComponent } from './material-form/material-form.component';
 import { AboutComponent } from './about/about.component';
 import {CustomMaterialModule} from "./shared/custom-material.module";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormComponent,
     MaterialFormComponent,
-    AboutComponent
+    AboutComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
