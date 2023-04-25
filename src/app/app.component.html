@@ -1,32 +1,9 @@
-<h1>Angular Reactive Forms Example</h1>
-<h2>Using Angular version {{AngularVersion}}</h2>
-<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
-  <div>
-    <label>
-      Name:
-      <input formControlName="name" placeholder="Your name">
-    </label>
-    <div *ngIf="isMissingRequiredField('name')">
-      Please provide a name.
-    </div>
-  </div>
-  <div>
-    <label>
-      Email:
-      <input formControlName="email" placeholder="Your email">
-    </label>
-    <div *ngIf="isMissingRequiredField('email')">
-      Please provide a valid email address.
-    </div>
-  </div>
-  <div>
-    <label>
-      Message:
-      <input formControlName="message" placeholder="Your message">
-    </label>
-    <div *ngIf="isMissingRequiredField('message')">
-      Messages must be at least 15 characters long.
-    </div>
-  </div>
-  <button type="submit" [disabled]="myForm.invalid">Send</button>
-</form>
+<!-- 
+<nav>
+  <a class="nav-button" routerLink="/reactive" routerLinkActive="activebutton">Reactive Form</a>
+  <a class="nav-button" routerLink="/material" routerLinkActive="activebutton">Material Form</a>
+  <a class="nav-button" routerLink="/about" routerLinkActive="activebutton">About</a>
+</nav>
+-->
+<app-navigation></app-navigation>
+<router-outlet></router-outlet>
