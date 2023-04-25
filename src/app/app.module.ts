@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 //
 import {ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { MaterialFormComponent } from './material-form/material-form.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReactiveFormComponent,
+    MaterialFormComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
