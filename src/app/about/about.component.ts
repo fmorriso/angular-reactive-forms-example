@@ -1,6 +1,8 @@
-import { Component, VERSION as ngVersion } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 //
-import {VERSION as matVersion} from '@angular/material/core';
+// services
+import { AngularVersionInformationService } from '../services/angular-version-information.service';
+import { MaterialVersionInformationService } from '../services/material-version-information.service';
 
 @Component({
   selector: 'app-about',
@@ -9,8 +11,16 @@ import {VERSION as matVersion} from '@angular/material/core';
 })
 export class AboutComponent {
 
+  constructor(
+    private readonly ngVersionService: AngularVersionInformationService,
+    private readonly matVersionService: MaterialVersionInformationService
+  ) {}
 
-  public get AngularVersion(): string { return ngVersion.full;}
-  public get MaterialVersion(): string {return matVersion.full;}
-  
+  get angularVersion(): string {
+    return this.ngVersionService.version.full;
+  }
+
+  get materialVersion(): string {
+    return this.matVersionService.version.full;
+  }
 }
