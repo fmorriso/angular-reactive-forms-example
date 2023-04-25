@@ -11,6 +11,7 @@ import { MaterialFormComponent } from './material-form/material-form.component';
 import { AboutComponent } from './about/about.component';
 import {CustomMaterialModule} from "./shared/custom-material.module";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ReactiveFormComponent,
     MaterialFormComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
