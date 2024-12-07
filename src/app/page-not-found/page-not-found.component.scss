@@ -1,6 +1,6 @@
 @use '@angular/material' as mat;
 @include mat.core();
-$my-palette: mat.$deep-purple-palette;
+$my-palette: mat.$m2-deep-purple-palette;
 
 .error {
     background-color: red;
