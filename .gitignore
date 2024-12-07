@@ -12,13 +12,24 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
-.idea/
 .project
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
+
+### WebStorm ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/
+.idea/**
+.idea/misc.xml
+.idea/workspace.xml
+workspace.xml
+.idea/**/workspace.xml
+*.iml
 
 # Visual Studio Code
 .vscode/*
