@@ -88,10 +88,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "FormsExample:build:production"
+              "buildTarget": "FormsExample:build:production"
             },
             "development": {
-              "browserTarget": "FormsExample:build:development"
+              "buildTarget": "FormsExample:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,7 +99,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "FormsExample:build"
+            "buildTarget": "FormsExample:build"
           }
         },
         "test": {

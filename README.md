@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | 2023-04-24 | Initial creation using Angular 15.2.8                     |
 | 2023-04-24 | added @angular/material 15.2.8 in branch angular-material |
 | 2024-12-07 | upgrade to Angular 16 and Angular/Material 16             |
+| 2024-12-07 | upgrade to Angular 17 and Angular/Material 17             |
 
 
 ## References
