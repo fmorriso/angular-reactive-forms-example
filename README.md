@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | 2024-12-07 | upgrade to Angular 16 and Angular/Material 16             |
 | 2024-12-07 | upgrade to Angular 17 and Angular/Material 17             |
 | 2024-12-07 | upgrade to Angular 18 and Angular/Material 18             |
+| 2024-12-07 | upgrade to Angular 19 and Angular/Material 19             |
 
 
 ## References

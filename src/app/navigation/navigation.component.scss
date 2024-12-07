@@ -1,5 +1,6 @@
 @use '@angular/material' as mat;
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 $my-palette: mat.$m2-deep-purple-palette;
 
 mat-nav-list.list-horizontal {
